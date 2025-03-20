@@ -1,22 +1,26 @@
 [
   {
-    "product": "Laptop",
-    "price": "₹50,000"
+    "product": "Almonds (1kg)",
+    "price": "₹850",
+    "offer": "10% off for today!",
+    "image": "https://example.com/almonds.jpg"
   },
   {
-    "product": "Smartphone",
-    "price": "₹25,000"
+    "product": "Cashew Nuts (500g)",
+    "price": "₹600",
+    "offer": "Flat ₹50 off!",
+    "image": "https://example.com/cashews.jpg"
   },
   {
-    "product": "Headphones",
-    "price": "₹2,500"
+    "product": "Walnuts (250g)",
+    "price": "₹400",
+    "offer": "Buy 1 Get 1 Free!",
+    "image": "https://example.com/walnuts.jpg"
   },
   {
-    "product": "Smartwatch",
-    "price": "₹5,000"
-  },
-  {
-    "product": "Keyboard",
-    "price": "₹1,500"
+    "product": "Pistachios (1kg)",
+    "price": "₹1200",
+    "offer": "15% Cashback!",
+    "image": "https://example.com/pistachios.jpg"
   }
 ]
