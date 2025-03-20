@@ -1,0 +1,22 @@
+[
+  {
+    "product": "Laptop",
+    "price": "₹50,000"
+  },
+  {
+    "product": "Smartphone",
+    "price": "₹25,000"
+  },
+  {
+    "product": "Headphones",
+    "price": "₹2,500"
+  },
+  {
+    "product": "Smartwatch",
+    "price": "₹5,000"
+  },
+  {
+    "product": "Keyboard",
+    "price": "₹1,500"
+  }
+]
