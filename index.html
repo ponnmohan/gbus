@@ -12,9 +12,20 @@
             margin: 0;
             padding: 0;
         }
-        h2 {
-            color: #6b3e26;
-            margin-top: 20px;
+        .header {
+            background-color: #6b3e26;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+        }
+        .contact-info {
+            font-size: 14px;
+            text-align: right;
         }
         .container {
             display: grid;
@@ -58,17 +69,37 @@
             color: #e74c3c;
             margin-top: 5px;
         }
+        .footer {
+            background-color: #6b3e26;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="https://www.grocerybus.in/img/logo_2.png" alt="Grocery Bus Logo">
+        </div>
+        <div class="contact-info">
+            📞 +91 8072969292 | ✉️ enquiry@grocerybus.in
+        </div>
+    </div>
 
     <h2>🥜 Fresh & Healthy Grocery Nuts 🥜</h2>
     <div class="container" id="productContainer">
         <p>Loading products...</p>
     </div>
 
+    <div class="footer">
+        📞 Contact: +91 8072969292 | ✉️ Email: enquiry@grocerybus.in
+    </div>
+
     <script>
-        const scriptURL = "https://raw.githubusercontent.com/ponnmohan/gbus/refs/heads/main/products.json"; // Replace with your actual URL
+        const scriptURL = "https://raw.githubusercontent.com/ponnmohan/gbus/main/products.json"; 
 
         async function fetchProducts() {
             try {
@@ -76,14 +107,14 @@
                 const data = await response.json();
 
                 let container = document.getElementById("productContainer");
-                container.innerHTML = ""; // Clear old data
+                container.innerHTML = ""; 
 
                 data.forEach(item => {
                     container.innerHTML += `
                         <div class="product-card">
                             <img src="${item.image}" alt="${item.product}">
                             <div class="product-name">${item.product}</div>
-                            <div class="product-price">${item.price}</div>
+                            <div class="product-price">₹${item.price}</div>
                             <div class="product-offer">${item.offer}</div>
                         </div>
                     `;
